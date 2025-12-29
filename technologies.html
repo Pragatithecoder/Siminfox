@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== Page Title ========== -->
+    <title>Siminfox - Our Technologies</title>
+
+    <!-- ========== Start Fonts Style ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&amp;family=Syne:wght@400;500;600&amp;family=Yantramanav:wght@100;300;400;500;700;900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link rel="stylesheet"
+        href="../../../cdn.jsdelivr.net/gh/iconoir-icons/iconoir%40main/css/iconoir.css">
+    <link rel="stylesheet"
+        href="../../../maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.html" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- ========== End Stylesheet ========== -->
+
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        html {
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+        }
+        
+        /* Reduce space between header and content */
+        .hero-service-wrap.hero-section-wrap.hero-about-wrap {
+            padding-bottom: 20px !important;
+            margin-bottom: 0 !important;
+        }
+        .hero-section-content-wrap {
+            padding-bottom: 0 !important;
+        }
+        .technologies-section {
+            padding-top: 20px !important;
+        }
+        
+        /* Technologies Grid */
+        .technologies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+        
+        .tech-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(209, 27, 48, 0.15);
+            border-color: #D11B30;
+        }
+        
+        .tech-card .tech-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tech-card .tech-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .tech-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0;
+        }
+        
+        .tech-category {
+            margin-bottom: 60px;
+        }
+        
+        .tech-category-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #D11B30;
+            display: inline-block;
+        }
+
+        /* Dropdown styles for navbar */
+        .navbar-wrapper ul li.has-dropdown {
+            position: relative !important;
+        }
+        .navbar-wrapper ul li.has-dropdown > a {
+            cursor: pointer;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav {
+            position: absolute !important;
+            top: 100% !important;
+            left: 0 !important;
+            background: #fff !important;
+            min-width: 200px !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+            border-radius: 8px !important;
+            padding: 10px 0 !important;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease !important;
+            z-index: 9999 !important;
+            list-style: none !important;
+            margin: 0 !important;
+            display: block !important;
+        }
+        .navbar-wrapper ul li.has-dropdown:hover .dropdown-menu-nav {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav li {
+            display: block !important;
+            float: none !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav li a {
+            display: block !important;
+            padding: 12px 20px !important;
+            color: #1a1a1a !important;
+            font-size: 15px !important;
+            transition: all 0.3s ease !important;
+            white-space: nowrap !important;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav li a:hover {
+            background: #f5f5f5 !important;
+            color: #D11B30 !important;
+        }
+        .navbar-wrapper ul li.has-dropdown > a::after {
+            content: ' ▼';
+            font-size: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main -->
+    <main class="main-page technologies-page">
+        <!-- Header Bar -->
+        <div class="header-bar">
+            <div class="custom-container">
+                <div class="header-bar-body d-flex align-items-center justify-content-between">
+                    <div class="left">
+                        <select class="country-select" name="country" id="country">
+                            <option value="uk">UK</option>
+                            <option value="dz">DZ</option>
+                        </select>
+                    </div>
+                   <div class="right">
+                        <p>
+                            Level up your business with <a href="about.html" data-word="SIMINFOX." id="dataWord">SIMINFOX.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header-area">
+
+            <div class="custom-container">
+                <div class="custom-row align-items-center justify-content-between">
+                    <div class="header-left d-flex align-items-center">
+                        <a href="home.html" class="logo">
+                            <img src="images/roundlogo.png" alt="Logo" />
+                        </a>
+
+                        <div class="header-left-right">
+                            <a href="contact.html" class="theme-btn">Contact Us</a>
+                            <span class="menu-bar">
+                                <i class="las la-bars"></i>
+                            </span>
+                        </div>
+                        <nav class="navbar-wrapper d-flex align-items-center">
+                            <span class="close-menu-bar">
+                                <i class="las la-times"></i>
+                            </span>
+                            <ul>
+                                <li>
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Corporate</a>
+                                    <ul class="dropdown-menu-nav">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="technologies.html">Technologies</a></li>
+                                        <li><a href="https://www.bespoke360.in/" target="_blank">BESPOKE 360</a></li>
+                                        <li><a href="https://www.eduspoke365.com/" target="_blank">EDUSPOKE 365</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="service.html">Services</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-contact-info d-flex align-items-center">
+                            <div class="phone-number">
+                                <a href="tel:+1-938-740-7555">
+                                    <span class="me-1">Call Us</span>
+                                    +1-938-740-7555
+                                </a>
+                            </div>
+                            <a href="contact.html" class="theme-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Page Header -->
+        <section class="hero-service-wrap hero-section-wrap hero-about-wrap">
+            <div class="hero-section-content-wrap">
+                <div class="custom-container">
+                    <div class="hero-portfolio-body">
+                        <div class="hero-section-content text-center">
+                            <h5 class="section-subtitle">OUR TECHNOLOGIES</h5>
+                            <h1 class="section-title fade-in">Technologies We Use</h1>
+                            <p>We leverage cutting-edge technologies to build robust, scalable, and innovative solutions for your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="technologies-section" style="padding: 20px 0 80px 0;">
+            <div class="custom-container">
+                
+                <!-- Web Development -->
+                <div class="tech-category">
+                    <h2 class="tech-category-title">Web Development</h2>
+                    <div class="technologies-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"/>
+                            </div>
+                            <h3>Laravel</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET"/>
+                            </div>
+                            <h3>.NET</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress"/>
+                            </div>
+                            <h3>WordPress</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
+                            </div>
+                            <h3>PHP</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter"/>
+                            </div>
+                            <h3>CodeIgniter</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Frameworks -->
+                <div class="tech-category">
+                    <h2 class="tech-category-title">Frontend Frameworks</h2>
+                    <div class="technologies-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"/>
+                            </div>
+                            <h3>Angular</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
+                            </div>
+                            <h3>React</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="tech-category">
+                    <h2 class="tech-category-title">Mobile Development</h2>
+                    <div class="technologies-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/>
+                            </div>
+                            <h3>Flutter</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"/>
+                            </div>
+                            <h3>Android</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="iOS"/>
+                            </div>
+                            <h3>iOS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eCommerce Platforms -->
+                <div class="tech-category">
+                    <h2 class="tech-category-title">eCommerce Platforms</h2>
+                    <div class="technologies-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" alt="WooCommerce"/>
+                            </div>
+                            <h3>WooCommerce</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.simpleicons.org/shopify/7AB55C" alt="Shopify"/>
+                            </div>
+                            <h3>Shopify</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" alt="Magento"/>
+                            </div>
+                            <h3>Magento</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.simpleicons.org/prestashop/DF0067" alt="PrestaShop"/>
+                            </div>
+                            <h3>PrestaShop</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AR/VR & Game Development -->
+                <div class="tech-category">
+                    <h2 class="tech-category-title">AR/VR & Game Development</h2>
+                    <div class="technologies-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.simpleicons.org/8thwall/0066FF" alt="8th Wall"/>
+                            </div>
+                            <h3>8th Wall</h3>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"/>
+                            </div>
+                            <h3>Unity</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <img src="assets/imgs/bg-shape-4.html" alt="Shape" class="animation-slide-right bg-shape" />
+            <div class="footer-top">
+                <div class="custom-container">
+                    <div class="custom-row align-items-end justify-content-between">
+                        <div class="left-content">
+                            <a href="home.html" class="logo">
+                                <img src="images/roundlogo.png" alt="Logo" />
+                            </a>
+                            <p>We provide the expertise and support to <br>
+                                propel your business forward.</p>
+                            <form action="https://wpriverthemes.com/HTML/synck/assets/mail/subscribe.php" method="POST" class="subscribe-form">
+                                <div class="subscribe-box d-flex">
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" />
+                                    <button id="submit2" class="theme-btn">Get Started</button>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group alert-notification">
+                                        <div id="alert-message-subscribe" class="alert-msg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="footer-clients d-flex align-items-center">
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/youtube.html" alt="Youtube" />
+                                </div>
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/webflow.html" alt="webflow" />
+                                </div>
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/upwork.svg" alt="upwork" />
+                                </div>
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/shopify.html" alt="shopify" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-content">
+                            <div class="right-content-inner">
+                                <h2>Let's get started on something great</h2>
+                                <p>Our team of IT experts looks forward to meeting with you <br>
+                                    and providing valuable insights tailored to your business.</p>
+                                <a href="contact.html" class="theme-btn">Get an appointment now</a>
+
+                                <div class="footer-experience d-flex align-items-center">
+                                    <div class="footer-experience-item">
+                                        <h1>2 <span>Mins</span></h1>
+                                        <p>Response Time</p>
+                                    </div>
+                                    <div class="footer-experience-item">
+                                        <h1>99%</h1>
+                                        <p>Client Satisfaction</p>
+                                    </div>
+                                    <div class="footer-experience-item">
+                                        <h1>22+ <span>Years</span></h1>
+                                        <p>Field Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="custom-container">
+                    <div class="custom-row">
+                        <div class="footer-all-links-wrap justify-content-between d-flex">
+                            <div class="footer-links">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="service-details.html">IT Support</a></li>
+                                    <li><a href="service-details.html">Web Design</a></li>
+                                    <li><a href="service-details.html">Development</a></li>
+                                    <li><a href="service-details.html">Cloud Things <span class="new">New</span></a></li>
+                                    <li><a href="service-details.html">E-Commerce</a></li>
+                                    <li><a href="service-details.html">CRM Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Company</h3>
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="partner.html">Partners</a></li>
+                                    <li><a href="career.html">Careers</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Product</h3>
+                                <ul>
+                                    <li><a href="case-studie.html">Case Studies </a></li>
+                                    <li><a href="pricing.html">Our Pricing</a></li>
+                                    <li><a href="feature.html">Features</a></li>
+                                    <li><a href="overview.html">Overview</a></li>
+                                    <li><a href="new-release.html">New Releases</a></li>
+                                    <li><a href="solution.html">Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Our Fields</h3>
+                                <ul>
+                                    <li><a href="our-field-details.html">Healthcare</a></li>
+                                    <li><a href="our-field-details.html">Banks</a></li>
+                                    <li><a href="our-field-details.html">Logistics</a></li>
+                                    <li><a href="our-field-details.html">Supermarkets</a></li>
+                                    <li><a href="our-field-details.html">Industries</a></li>
+                                    <li><a href="our-field-details.html">Hotels</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Legal</h3>
+                                <ul>
+                                    <li><a href="#">Licenses</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Cookies</a></li>
+                                    <li><a href="#">Document</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-area">
+                <div class="custom-container">
+                    <div class="custom-row d-flex align-items-center justify-content-between">
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                            <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                            <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                            <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                        </ul>
+                        <p>&copy; 2023 All rights reserved by <a href="https://themeforest.net/user/wordpressriver/portfolio">WordpressRiver</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- jQuery Frameworks -->
+    <script src="assets/js/jquery-3.7.0.min.html"></script>
+    <script src="assets/js/bootstrap.bundle.min.html"></script>
+    <script src="assets/js/gsap.min.html"></script>
+    <script src="assets/js/Draggable.min.html"></script>
+    <script src="assets/js/swiper-bundle.min.html"></script>
+    <script src="assets/js/client-marquee.html"></script>
+    <script src="assets/js/theme-custom.html"></script>
+    <script src="assets/js/form1.html"></script>
+
+</body>
+
+</html>
+

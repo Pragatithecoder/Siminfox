@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from wpriverthemes.com/HTML/synck/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Dec 2025 07:43:42 GMT -->
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== Page Title ========== -->
+    <title>Synck - New IT Services and Business Consulting HTML5 Template</title>
+
+    <!-- ========== Start Fonts Style ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&amp;family=Syne:wght@400;500;600&amp;family=Yantramanav:wght@100;300;400;500;700;900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link rel="stylesheet"
+        href="../../../cdn.jsdelivr.net/gh/iconoir-icons/iconoir%40main/css/iconoir.css">
+    <link rel="stylesheet"
+        href="../../../maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.html" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- ========== End Stylesheet ========== -->
+
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        html {
+            overflow: -moz-scrollbars-none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+        /* Marquee animation for infinite loop */
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .clients-marquee {
+            will-change: transform;
+        }
+        /* Remove partitions/separators between logos */
+        .client-area-2 .clients .client-logo::before {
+            display: none !important;
+        }
+        .client-area-2 .clients .client-logo {
+            border: none !important;
+        }
+        /* Dropdown styles for navbar */
+        .navbar-wrapper ul li.has-dropdown {
+            position: relative !important;
+        }
+        .navbar-wrapper ul li.has-dropdown > a {
+            cursor: pointer;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav {
+            position: absolute !important;
+            top: 100% !important;
+            left: 0 !important;
+            background: #fff !important;
+            min-width: 200px !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+            border-radius: 8px !important;
+            padding: 10px 0 !important;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease !important;
+            z-index: 9999 !important;
+            list-style: none !important;
+            margin: 0 !important;
+            display: block !important;
+        }
+        .navbar-wrapper ul li.has-dropdown:hover .dropdown-menu-nav {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav li {
+            display: block !important;
+            float: none !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav li a {
+            display: block !important;
+            padding: 12px 20px !important;
+            color: #1a1a1a !important;
+            font-size: 15px !important;
+            transition: all 0.3s ease !important;
+            white-space: nowrap !important;
+        }
+        .navbar-wrapper ul li.has-dropdown .dropdown-menu-nav li a:hover {
+            background: #f5f5f5 !important;
+            color: #D11B30 !important;
+        }
+        .navbar-wrapper ul li.has-dropdown > a::after {
+            content: ' ▼';
+            font-size: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main -->
+    <main class="main-page about-page">
+        <!-- Header Bar -->
+        <div class="header-bar">
+            <div class="custom-container">
+                <div class="header-bar-body d-flex align-items-center justify-content-between">
+                    <div class="left">
+                        <select class="country-select" name="country" id="country">
+                            <option value="en">EN</option>
+                            <option value="uk">UK</option>
+                            <option value="dz">DZ</option>
+                        </select>
+                    </div>
+                   <div class="right">
+                        <p>
+                            Level up your business with <a href="about.html" data-word="SYNCK." id="dataWord">SYNCK.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header-area">
+
+            <div class="custom-container">
+                <div class="custom-row align-items-center justify-content-between">
+                    <div class="header-left d-flex align-items-center">
+                        <a href="home.html" class="logo">
+                            <img src="images/roundlogo.png" alt="Logo" />
+                        </a>
+
+                        <div class="header-left-right">
+                            <a href="contact.html" class="theme-btn">Contact Us</a>
+                            <span class="menu-bar">
+                                <i class="las la-bars"></i>
+                            </span>
+                        </div>
+                        <nav class="navbar-wrapper d-flex align-items-center">
+                            <span class="close-menu-bar">
+                                <i class="las la-times"></i>
+                            </span>
+                            <ul>
+                                <li>
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Corporate</a>
+                                    <ul class="dropdown-menu-nav">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="technologies.html">Technologies</a></li>
+                                        <li><a href="https://www.bespoke360.in/" target="_blank">BESPOKE 360</a></li>
+                                        <li><a href="https://www.eduspoke365.com/" target="_blank">EDUSPOKE 365</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="service.html">Services</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-contact-info d-flex align-items-center">
+                            <div class="phone-number">
+                                <a href="tel:+1-938-740-7555">
+                                    Call Us 
+                                    <i class="iconoir-arrow-up-right"></i>
+                                </a>
+                                +1-938-740-7555
+                            </div>
+                            <a href="contact.html" class="theme-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- About Hero -->
+        <section class="hero-service-wrap hero-section-wrap hero-about-wrap">
+            <div class="hero-section-content-wrap">
+                <div class="custom-container">
+                    <div class="hero-portfolio-body">
+                        <div class="hero-section-content text-center">
+                            <h5 class="section-subtitle">Company</h5>
+                            <h1 class="section-title fade-in">Our company provide a best 
+                                horizon tech solutions</h1>
+                            <p>Experience the transformative power of innovation and seamless solutions with
+                                dynamics. Our journey doesn't end with the delivery of a solution.</p>
+                        </div>
+
+                        <div class="hero-company-boxes">
+                            <div class="hero-company-box simple-shadow">
+                                <h1>300+</h1>
+                                <h3>Projects</h3>
+                                <p>We are spread around
+                                    the world.</p>
+                            </div>
+                            <div class="hero-company-box simple-shadow">
+                                <h1>100%</h1>
+                                <h3>Client Satisfaction</h3>
+                                <p>Our clients a happy with 
+                                    our service.</p>
+                            </div>
+                            <div class="hero-company-box simple-shadow">
+                                <h1>15k</h1>
+                                <h3>Legal Customers</h3>
+                                <p>Our customers are from
+                                    many countries.</p>
+                            </div>
+                            <div class="hero-company-box simple-shadow">
+                                <h1>1995</h1>
+                                <h3>We Established On</h3>
+                                <p>Our company have a 
+                                    great history.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Client Section - Auto Moving Carousel -->
+        <section class="client-area client-area-2" style="padding: 80px 0; background: transparent; overflow: hidden; min-height: 200px;">
+            <div style="width: 100%; overflow: hidden;">
+                <div class="clients clients-marquee d-flex align-items-center" style="animation: marquee 102s linear infinite; width: max-content !important; white-space: nowrap;">
+                    <!-- All 54 client logos -->
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/1.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/2.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/3.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/4.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/5.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/6.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/7.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/8.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/9.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/10.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/11.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/12.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/13.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/14.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/15.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/16.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/17.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/18.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/19.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/20.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/21.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/22.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/23.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/24.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/25.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/26.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/27.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/28.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/29.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/30.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/31.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/32.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/33.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/34.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/35.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/36.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/37.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/38.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/39.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/40.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/41.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/42.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/43.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/44.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/45.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/46.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/47.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/48.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/49.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/50.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/51.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/52.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/53.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/54.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <!-- Duplicate logos for seamless loop -->
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/1.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/2.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/3.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/4.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/5.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                    <div class="client-logo" style="min-width: 320px; height: 256px; display: flex; align-items: center; justify-content: center; padding: 0 14.4px; flex-shrink: 0;"><img src="assets/imgs/clients/6.png" alt="Client" style="max-height: 100%; max-width: 100%; object-fit: contain; width: auto; height: auto;" /></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Service -->
+        <section class="company-service-area">
+            <div class="custom-container">
+                <div class="hero-service-about">
+                    <div class="section-header d-flex align-items-center justify-content-between w-full">
+                        <div class="left">
+                            <h5 class="section-subtitle">OUR COMPANY</h5>
+                            <h1 class="section-title">Why our company is too popular?</h1>
+                            <p>Contact us today to begin your journey!</p>
+                        </div>
+                        <a href="contact.html" class="theme-btn">Contact Us</a>
+                    </div>
+
+                    <img src="assets/imgs/hero-company-about.html" alt="Service About"/>
+                    <div class="hero-service-about-body">
+                        <p>Our team is a collective force of top talents, pros, experts, and visionaries from diverse fields. With a passion for excellence, our professionals bring a wealth of experience and knowledge to every project. At Slack, we are committed to delivering nothing short of excellence. From concept to implementation, we maintain the highest standards of quality and craftsmanship, leaving no room for compromise.</p>
+                        <ul>
+                            <li>
+                                <i class="las la-check"></i> Managed Services and Products
+                            </li>
+                            <li>
+                                <i class="las la-check"></i> Flexibility and Adaptability
+                            </li>
+                            <li>
+                                <i class="las la-check"></i> Competitive Advantage
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Service Area -->
+        <section class="service4-area service-area">
+            <div class="custom-container">
+                <div class="service-section-header section-header d-flex align-items-end justify-content-between">
+                    <div class="left">
+                        <h5 class="section-subtitle">WHAT WE’RE OFFERING</h5>
+                        <h1 class="section-title">Dealing in all professional <br>IT services.</h1>
+                    </div>
+                    <p>One fundamental aspect of IT services is infrastructure management. This involves the design,
+                        implementation, and maintenance of the hardware, software, networks, and servers.</p>
+                </div>
+
+                <div class="services-list d-flex">
+                    <div class="service-card simple-shadow pop-in">
+                        <img src="assets/imgs/service-icon-1.html" alt="Service Icon" class="service-icon" />
+                        <h3><a href="#">Development</a></h3>
+                        <p>Our development is pixel perfect in all ways.</p>
+                    </div>
+                    <div class="service-card simple-shadow pop-in">
+                        <img src="assets/imgs/service-icon-2.html" alt="Service Icon" class="service-icon" />
+                        <h3><a href="#">Woo Commerce</a></h3>
+                        <p>We have a best team for your shopping websites.</p>
+                    </div>
+                    <div class="service-card simple-shadow pop-in">
+                        <img src="assets/imgs/service-icon-3.html" alt="Service Icon" class="service-icon" />
+                        <h3><a href="#">CRM Solutions</a></h3>
+                        <p>We enhance customer experiences for success.</p>
+                    </div>
+                    <div class="service-card simple-shadow pop-in">
+                        <img src="assets/imgs/service-icon-4.html" alt="Service Icon" class="service-icon" />
+                        <h3><a href="#">Web Design</a></h3>
+                        <p>We create vibrant, intuitive and minimalist web</p>
+                    </div>
+                    <div class="service-card simple-shadow pop-in">
+                        <span class="service-badge">Free!</span>
+                        <img src="assets/imgs/service-icon-5.html" alt="Service Icon" class="service-icon" />
+                        <h3><a href="#">IT Support</a></h3>
+                        <p>We offers expert assistance for your IT issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Team -->
+        <section class="our-team-2-area">
+            <div class="custom-container">
+                <div class="section-header our-team-2-header d-flex align-items-center justify-content-between w-full">
+                    <img class="animation-slide-right bg-shape" src="assets/imgs/bg-shape-10.html" alt="Shape" />
+                    <div class="left">
+                        <h5 class="section-subtitle">OUR TEAM</h5>
+                        <h1 class="section-title">Our professional experts</h1>
+                        <p>Our team is a collective force of top talents, experts, and <br>
+                            visionaries from diverse fields.</p>
+                    </div>
+
+                    <a href="contact.html" class="theme-btn">Book an appointment with our expert now</a>
+                </div>
+
+                <div class="our-team-2-lists">
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team4.html" alt="Team"/>
+                        </div>
+                        <h2>Jennifer Linda</h2>
+                        <span class="designation">Product Designer</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team5.html" alt="Team"/>
+                        </div>
+                        <h2>Merlin Bullock</h2>
+                        <span class="designation">Business Analyst</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team6.html" alt="Team"/>
+                        </div>
+                        <h2>Beatrix Clara</h2>
+                        <span class="designation">Front End Developer</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team7.html" alt="Team"/>
+                        </div>
+                        <h2>Richard Parker</h2>
+                        <span class="designation">Back End Developer</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team8.html" alt="Team"/>
+                        </div>
+                        <h2>Aminul Ashfaq</h2>
+                        <span class="designation">Devops Engineer</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team9.html" alt="Team"/>
+                        </div>
+                        <h2>Margeret Allan</h2>
+                        <span class="designation">Cloud Expert</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team10.html" alt="Team"/>
+                        </div>
+                        <h2>Mason Williams</h2>
+                        <span class="designation">System Engineer</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="our-team-2-card">
+                        <div class="img-box">
+                            <img src="assets/imgs/team11.html" alt="Team"/>
+                        </div>
+                        <h2>Emily Frida</h2>
+                        <span class="designation">UX Designer</span>
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="about-service3-area">
+            <div class="custom-container">
+                <div class="custom-row align-items-center">
+                    <div class="img-box">
+                        <img src="assets/imgs/about-service-3.html" alt="About" />
+                    </div>
+
+                    <div class="content-box">
+                        <h1>Why our services are <br>
+                            better than others?</h1>
+                        <p>We don't believe in a one-size-fit-all approach. Our services are carefully customized to suit your specific need, ensuring you to achieve your goals.</p>
+                        <p>We believe in delivering value that extends  your beyond the immediate project. Our services are designed to provide a long-term benefits.</p>
+                        <ul>
+                            <li>
+                                <i class="las la-check"></i> PPD Development
+                            </li>
+                            <li>
+                                <i class="las la-check"></i> Quick Response
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta-area">
+            <div class="custom-container">
+                <div class="cta-body text-center">
+                    <img src="assets/imgs/bg-shape-11.html" alt="Shape" class="animation-slide-left bg-shape"/>
+                    <div class="our-expert-team-box">
+                        <div class="our-expert-team-box-inner d-flex align-items-center">
+                            <div class="imgs d-flex align-items-center">
+                                <img src="assets/imgs/small-img-4.png" alt="team" />
+                                <img src="assets/imgs/small-img-3.png" alt="team" />
+                                <img src="assets/imgs/small-img-2.png" alt="team" />
+                                <img src="assets/imgs/small-img-1.png" alt="team" />
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Need any further assitance?</h2>
+                    <p>Feel free to reach out for any inquiries or assistance.</p>
+                    <a href="contact.html" class="theme-btn">Book an appointment now</a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <img src="assets/imgs/bg-shape-4.html" alt="Shape" class="animation-slide-right bg-shape" />
+            <div class="footer-top">
+                <div class="custom-container">
+                    <div class="custom-row align-items-end justify-content-between">
+                        <div class="left-content">
+                            <a href="home.html" class="logo">
+                                <img src="images/roundlogo.png" alt="Logo" />
+                            </a>
+                            <p>We provide the expertise and support to <br>
+                                propel your business forward.</p>
+                            <form action="https://wpriverthemes.com/HTML/synck/assets/mail/subscribe.php" method="POST" class="subscribe-form">
+                                <div class="subscribe-box d-flex">
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" />
+                                    <button id="submit2" class="theme-btn">Get Started</button>
+                                </div>
+                                <!-- Alert Message -->  
+                                <div class="input-row">
+                                    <div class="input-group alert-notification">
+                                        <div id="alert-message-subscribe" class="alert-msg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="footer-clients d-flex align-items-center">
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/youtube.html" alt="Youtube" />
+                                </div>
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/webflow.html" alt="webflow" />
+                                </div>
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/upwork.svg" alt="upwork" />
+                                </div>
+                                <div class="footer-client-img">
+                                    <img src="assets/imgs/shopify.html" alt="shopify" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-content">
+                            <div class="right-content-inner">
+                                <h2>Let’s get started on something great</h2>
+                                <p>Our team of IT experts looks forward to meeting with you <br>
+                                    and providing valuable insights tailored to your business.</p>
+                                <a href="contact.html" class="theme-btn">Get an appointment now</a>
+
+                                <div class="footer-experience d-flex align-items-center">
+
+                                    <div class="footer-experience-item">
+                                        <h1>2 <span>Mins</span></h1>
+                                        <p>Response Time</p>
+                                    </div>
+                                    <div class="footer-experience-item">
+                                        <h1>99%</h1>
+                                        <p>Client Satisfaction</p>
+                                    </div>
+                                    <div class="footer-experience-item">
+                                        <h1>22+ <span>Years</span></h1>
+                                        <p>Field Experience</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="custom-container">
+                    <div class="custom-row">
+                        <div class="footer-all-links-wrap justify-content-between d-flex">
+                            <div class="footer-links">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="service-details.html">IT Support</a></li>
+                                    <li><a href="service-details.html">Web Design</a></li>
+                                    <li><a href="service-details.html">Development</a></li>
+                                    <li><a href="service-details.html">Cloud Things <span class="new">New</span></a></li>
+                                    <li><a href="service-details.html">E-Commerce</a></li>
+                                    <li><a href="service-details.html">CRM Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Company</h3>
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="partner.html">Partners</a></li>
+                                    <li><a href="career.html">Careers</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Product</h3>
+                                <ul>
+                                    <li><a href="case-studie.html">Case Studies </a></li>
+                                    <li><a href="pricing.html">Our Pricing</a></li>
+                                    <li><a href="feature.html">Features</a></li>
+                                    <li><a href="overview.html">Overview</a></li>
+                                    <li><a href="new-release.html">New Releases</a></li>
+                                    <li><a href="solution.html">Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Our Fields</h3>
+                                <ul>
+                                    <li><a href="our-field-details.html">Healthcare</a></li>
+                                    <li><a href="our-field-details.html">Banks</a></li>
+                                    <li><a href="our-field-details.html">Logistics</a></li>
+                                    <li><a href="our-field-details.html">Supermarkets</a></li>
+                                    <li><a href="our-field-details.html">Industries</a></li>
+                                    <li><a href="our-field-details.html">Hotels</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Legal</h3>
+                                <ul>
+                                    <li><a href="#">Licenses</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Cookies</a></li>
+                                    <li><a href="#">Document</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-area">
+                <div class="custom-container">
+                    <div class="custom-row d-flex align-items-center justify-content-between">
+                        <ul class="social-links d-flex align-items-center">
+                            <li><a href="#">
+                                <i class="iconoir-dribbble"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-instagram"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="iconoir-linkedin"></i>
+                            </a></li>
+                        </ul>
+
+                        <p>&copy; 2023 All rights reserved by <a href="https://themeforest.net/user/wordpressriver/portfolio">WordpressRiver</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-3.7.0.min.html"></script>
+    <script src="assets/js/bootstrap.bundle.min.html"></script>
+    <script src="assets/js/gsap.min.html"></script>
+    <script src="assets/js/Draggable.min.html"></script>
+    <script src="assets/js/swiper-bundle.min.html"></script>
+    <script src="assets/js/client-marquee.html"></script>
+    <script src="assets/js/theme-custom.html"></script>
+    <script src="assets/js/form1.html"></script>
+    <script src="assets/js/subscribe-form.html"></script>
+</body>
+
+
+<!-- Mirrored from wpriverthemes.com/HTML/synck/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Dec 2025 07:43:42 GMT -->
+</html>
